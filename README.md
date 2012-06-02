@@ -7,7 +7,7 @@ Over the next week or so I'll be compiling the docs and examples that will be us
 
 ***
 
-## Dev vs. Prod: Optimizing Your Site Without Making Your Build Process Suck
+### Dev vs. Prod: Optimizing Your Site Without Making Your Build Process Suck
 
 There are plenty of suggestions for website optimizations that you should be doing in order to provide the best possible experience for your users. Things like limiting file size, reducing the total number of requests, shrinking images, serving files from a CDN, and keeping initial load times as fast as possible. While plenty of literature is available to tell you why you should be doing these optimizations, there is a fair bit of handwaving involved when it comes down to how you can actually implement them without making your build and deploy model totally suck.
 
