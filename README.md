@@ -12,3 +12,15 @@ Over the next week or so I'll be compiling the docs and examples that will be us
 There are plenty of suggestions for website optimizations that you should be doing in order to provide the best possible experience for your users. Things like limiting file size, reducing the total number of requests, shrinking images, serving files from a CDN, and keeping initial load times as fast as possible. While plenty of literature is available to tell you why you should be doing these optimizations, there is a fair bit of handwaving involved when it comes down to how you can actually implement them without making your build and deploy model totally suck.
 
 Optimization often comes as an afterthought, or more accurately, a fore-thought like, "I don't have time for this sh*, I'll do it later". And it's usually because it slows down the development cycle. The goal of this workshop (and this repository) is to provide concrete examples of how you can incorporate web optimization early, and in such a way that you'll never have to think about it after it's set up.
+
+### Dev vs. Prod: Optimizing Your Site Without Making Your Build Process Suck
+
+The workshop will include demos that require the following to be installed (if you'd like to follow along):
+
+* linux (preferrably Ubuntu or OS X)
+    * [Homebrew](http://mxcl.github.com/homebrew/) (OS X)
+* [Apache](http://httpd.apache.org/) >= 2.2
+* [Python](http://www.python.org/getit/) ~2.7.3
+    * [virtualenv](http://pypi.python.org/pypi/virtualenv/)
+    * [pip](http://pypi.python.org/pypi/pip)
+* [Nginx](http://wiki.nginx.org/Main)
