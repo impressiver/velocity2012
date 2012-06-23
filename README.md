@@ -13,7 +13,7 @@ There are plenty of suggestions for website optimizations that you should be doi
 
 Optimization often comes as an afterthought, or more accurately, a fore-thought like, "I don't have time for this sh*, I'll do it later". And it's usually because it slows down the development cycle. The goal of this workshop (and this repository) is to provide concrete examples of how you can incorporate web optimization early, and in such a way that you'll never have to think about it after it's set up.
 
-### Dev vs. Prod: Optimizing Your Site Without Making Your Build Process Suck
+### Useful Links
 
 The workshop will include demos that require the following to be installed (if you'd like to follow along):
 
