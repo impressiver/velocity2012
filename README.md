@@ -16,4 +16,5 @@ Optimization often comes as an afterthought, or more accurately, a fore-thought 
 ### Useful Links
 
 Slides: http://bit.ly/Lp4uWn
+
 A PDF of the slides with notes is included in this repo.
