@@ -1,0 +1,18 @@
+==========
+Nginx
+----------
+$ sudo aptitude install nginx   # or sudo apt-get install nginx
+$ sudo rm /etc/nginx/sites-enabled/default
+
+$ sudo cp nginx.conf /etc/nginx/nginx.conf
+$ sudo cp proxy.conf /etc/nginx/proxy.conf
+
+$ sudo ln -s /etc/nginx/sites-available/<domain name> /etc/nginx/sites-enabled/<domain name>
+
+$ sudo vim /etc/apache2/ports.conf
+    > NameVirtualHost *:8080
+    > Listen 8080
+
+$ sudo /etc/init.d/nginx start
+$ sudo /etc/init.d/apache2 reload
+

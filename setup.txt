@@ -1,0 +1,84 @@
+==========
+TODO
+----------
+
+- prepare example config files
+- make Flask-Optimize work
+- finish Gooderlooking UI
+- configure Ubuntu VM
+
+- upload velocity git repo files
+
+==========
+Setup
+----------
+
+Ubuntu
+    # demo:admin
+    # http://www.meppum.com/2009/jan/17/installing-django-ubuntu-intrepid/
+    
+    - add user
+        $ sudo adduser devel
+        # password: admin
+        
+    - update packages
+        $ sudo apt-get update
+        $ sudo apt-get install module-assistant
+        $ sudo aptitude safe-upgrade
+        $ sudo aptitude full-upgrade
+        $ sudo aptitude install build-essential
+    
+    - VMware tools
+        $ apt-get install open-vm-tools
+        # or: 
+            $ apt-get install --no-install-recommends open-vm-dkms
+            $ apt-get install --no-install-recommends open-vm-tools
+        # For missing modules
+        $ module-assistant auto-install open-vm -i
+        
+    - vim
+        $ sudo apt-get vim
+        
+    - MySQL
+        $ sudo aptitude install mysql-client-core-5.5
+        $ sudo aptitude install mysql-server
+        $ mysqladmin create gooderlooking_dev
+        
+    - Apache, Python
+        # http://www.meppum.com/2009/jan/17/installing-django-ubuntu-intrepid/#Login_Linux
+        $ sudo aptitude install apache2 apache2.2-common apache2-mpm-worker apache2-threaded-dev libapache2-mod-wsgi python-dev
+        $ sudo usermod -a -G www-data admin
+        $ mkdir ~/sites
+        $ sudo chgrp -R www-data ~/sites
+        $ sudo chmod -R 2750 /home/<username>/public_html
+        $ sudo vim /
+        
+    - pip
+        $ sudo aptitude install pip
+        
+    - Nginx
+        $ sudo aptitude install nginx
+    
+    - Git
+        $ sudo aptitude install git
+        $ git clone <gooderlooking>
+        cd <gooderlooking>
+        $ virtualenv --no-site-packages venv
+        $ . venv/bin/activate
+
+
+Examples
+    $ mkdir ~/tmp
+    $ cd ~/tmp
+    $ git clone https://github.com/impressiver/velocity2012.git
+
+Serving static files w/ Nginx
+    # Add the contents of ~/tmp/velocity2012/examples/config/webserver/nginx-static.conf to your Nginx config
+    $ sudo nginx -s reload
+    
+Minify w/ Nginx
+    $ cd /path/to/domain.com/static
+    $ git clone https://github.com/impressiver/minify.git min
+    $ cp ~/tmp/velocity2012/examples/config/minify/config.php min/
+    # Now add the contents of `~/tmp/velocity2012/examples/config/webserver/nginx-static.conf` to your nginx config (if you haven't already)
+    $ sudo nginx -s reload

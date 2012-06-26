@@ -1,0 +1,8 @@
+==========
+Versioning
+----------
+
+Flask-Assets
+    # Built into Flask-Assets, but you can do it many ways
+    $ vim ~/sites/gooderlooking.com/gooderlooking/config.py
+    # Custom version function in cat ~/sites/gooderlooking.com/gooderlooking/assets.py

@@ -1,0 +1,35 @@
+==========
+Minification
+----------
+
+$ pip install Flask-Assets
+$ pip install cssmin
+# Automatically build bundles from config
+# Configure ASSETS in config.py
+
+    # ASSETS
+    ASSETS_DEBUG = False
+    ASSETS_VERSIONS = 'build'
+    ASSETS_DEFAULT_DEST = 'min'
+    ASSETS_SCRIPTS = {
+        'boot': [
+            'scripts/jquery-1.7.2.js',
+            'lib/jquery-ui-1.8.21/development-bundle/ui/jquery.ui.core.js',
+            'scripts/modernizr.js',
+            'scripts/spin.js',
+            'scripts/app.js'
+        ],
+        'timelines': [
+            'scripts/timelines.js'
+        ]
+    }
+    ASSETS_STYLES = {
+        'boot': [
+            'styles/reset.css',
+            'styles/site.css',
+            'styles/theme.responsive.css'
+        ],
+        'timelines': [
+            'styles/timelines.css'
+        ]
+    }
