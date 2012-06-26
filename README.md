@@ -3,7 +3,7 @@ velocity2012
 
 Resources for Velocity 2012 workshop attendees <http://oreil.ly/L46YJ0>
 
-Over the next week or so I'll be compiling the docs and examples that will be used in the workshop. If you plan on attending, please watch this repo for updates. I'd like to tailor the examples to whatever everyone would find most useful. Feel free to email me at <ian@impressiver.com> or find me on [Twitter](http://twitter.com/#!/impressiver).
+Over the next week or so I'll be compiling the docs and examples used in the workshop. Feel free to email me at <ian@impressiver.com> or find me on [Twitter](http://twitter.com/#!/impressiver).
 
 ***
 
@@ -15,12 +15,5 @@ Optimization often comes as an afterthought, or more accurately, a fore-thought 
 
 ### Useful Links
 
-The workshop will include demos that require the following to be installed (if you'd like to follow along):
-
-* linux (preferrably Ubuntu or OS X)
-    * [Homebrew](http://mxcl.github.com/homebrew/) (OS X)
-* [Apache](http://httpd.apache.org/) >= 2.2
-* [Python](http://www.python.org/getit/) ~2.7.3
-    * [virtualenv](http://pypi.python.org/pypi/virtualenv/)
-    * [pip](http://pypi.python.org/pypi/pip)
-* [Nginx](http://wiki.nginx.org/Main)
+Slides: http://bit.ly/Lp4uWn
+A PDF of the slides with notes is included in this repo.
